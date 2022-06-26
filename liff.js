@@ -1,4 +1,5 @@
-$(document).ready(function () {
+   
+    $(document).ready(function () {
 
     var liffId = "1657196041-vDWabr0g";
     initializeLiff(liffId);
@@ -27,11 +28,6 @@ function sendText(text) {
     liff.sendMessages([{
         'type': 'text',
         'text': text
-    },{
-        "type": "sticker",
-        "packageId": "11539",
-        "stickerId": "52114113"
-        
     }]).then(function () {  
         liff.closeWindow();
         
@@ -39,3 +35,12 @@ function sendText(text) {
         window.alert('Failed to send message ' + error);
     });
 }
+    
+    
+    
+    
+    
+    
+    
+    
+    
